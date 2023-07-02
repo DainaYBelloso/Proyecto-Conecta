@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unete</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="bg">
+    <header class="back">
+        <!-- Encabezado -->
+        <div class="p-20 font-serif">
+            <div
+                class=" boton absolute left-10 top-10  bg-gradient-to-r from-green-300 to-purple-400 hover:text-white bg-yellow-300">
+                <button id="volver">Atrás</button>
+            </div>
+            <div class="introduction">
+                <h1 class=" mb-8 text-6xl">Conecta</h1>
+
+            </div>
+        </div>
+    </header>
+
+    <body class="">
+
+        <section id="login" class="hidden">
+            <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-20 max-w-7xl">
+                <div class="w-full max-w-md mx-auto md:max-w-sm md:px-0 md:w-96 sm:px-4">
+                    <div class="flex flex-col">
+                        <div>
+                            <h2 class="text-4xl font-serif text-black">Bienvenido</h2>
+                        </div>
+                    </div>
+                    <input autocomplete="false" name="hidden" style="display: none">
+                    <input name="_redirect" type="hidden" value="https://jamstacker.studio/thankyou">
+                    <div class="mt-4 space-y-6">
+                        <div class="col-span-full">
+                            <label class="block mb-3 text-sm font-medium text-gray-600" name="password">
+                                Nick
+                            </label>
+                            <input id="loginEmail"
+                                class="block w-full px-6 py-3 text-black bg-white border border-gray-200 rounded-full appearance-none placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                                placeholder="Nick" autocomplete="off" type="email">
+                        </div>
+                        <div class="col-span-full">
+                            <label class="block mb-3 text-sm font-medium text-gray-600" name="password">
+
+                            </label>
+
+                        </div>
+
+                        <div class="col-span-full">
+                            <button onclick="login()"
+                                class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
+                                type="submit">
+
+                            </button>
+
+                            <button onclick="showRegister()" class="mt-4 text-center w-full">¿No tienes cuenta?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conect" class="">
+            <div class="flex flex-row  space-x-96 m-auto mt-6 mb-8">
+                <img class="w-40  absolute top-0 right-2 " src="img/logo.png" alt="">
+
+            </div>
+            <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-20 max-w-7xl">
+                <div class="w-full max-w-md mx-auto md:max-w-sm md:px-0 md:w-96 sm:px-4">
+                    <div class="flex flex-col">
+                        <div>
+
+                            <p class="font-serif text-xl text-white">Queremos saber a cuanta gente llegamos</p>
+                        </div>
+                    </div>
+                    <input autocomplete="false" name="hidden" style="display: none">
+                    <input name="_redirect" type="hidden" value="https://jamstacker.studio/thankyou">
+                    <div class="mt-4 space-y-6">
+                        <div class="col-span-full">
+                            <label class="block mb-3 text-sm font-medium text-white" name="password">
+                                Nick
+                            </label>
+                            <input id="name"
+                                class="block w-full px-6 py-3 text-black bg-white border border-gray-200 rounded-full appearance-none placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                                placeholder="Elige tu Nick" autocomplete="off" type="name">
+                        </div>
+                        <div class="col-span-full">
+                            <label class="block mb-3 text-sm font-medium text-white" name="password">
+                                Correo
+                            </label>
+                            <input id="email"
+                                class="block w-full px-6 py-3 text-black bg-white border border-gray-200 rounded-full appearance-none placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                                placeholder="Escribe tu correo" autocomplete="off" type="email">
+                        </div>
+
+                        <div>
+                            <label class="block mb-3 text-sm font-medium text-white" name="message">
+                                Cuentanos en que te hemos ayudado o que podemos incluir
+                            </label>
+                            <div class="mt-1">
+                                <textarea id="cuentanos"
+                                    class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                                    placeholder="Cuentanos tu experiencia/Que podemos mejorar" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-span-full">
+                            <button onclick="conect()"
+                                class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-black border-2 border-black rounded-full nline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
+                                type="submit" class="hidden">
+                                Enviar
+                            </button>
+                            <button onclick="showLogin()" class="mt-4 text-center w-full"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="js/unete.js"></script>
+
+
+    </body>
+
+</body>
+
+</html>

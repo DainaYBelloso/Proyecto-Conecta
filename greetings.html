@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludos</title>
+    <link rel="stylesheet" href="css/greetings.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
+    <div class=" boton absolute left-10 top-10 hover:text-white bg-yellow-200">
+        <button id="volver">Atrás</button>
+    </div>
+    <div class="flex flex-row  space-x-96 m-auto mt-6 mb-8">
+
+        <img class="w-40  absolute top-0 right-2 " src="img/logo.png" alt="">
+
+    </div>
+    <div class="folders font-serif ">
+        <div class=" box  text-3xl">
+            <h1 class="opacity-75">Cómo se signa...? </h1>
+            <img class="w-20 opacity-80 animate-ping  " src="img/flecha.webp" alt="">
+            <select id="option" class=" opacity-50 text-2xl " onchange="saludo()">
+                <option value="vacio"></option>
+                <option value="Saludar">Saludar</option>
+                <option value="Hola">Hola</option>
+                <option value="Encantado">Encantado/a</option>
+                <option value="Buenos dias">Buenos días</option>
+                <option value="Buenas tardes">Buenas tardes</option>
+                <option value="Buenas noches">Buenas noches</option>
+                <option value="Adios">Adiós</option>
+                <option value="Hasta la vista">Hasta la vista</option>
+                <option value="Hasta luego">Hasta luego</option>
+
+            </select>
+        </div>
+        <div class="box-content  p-1 ">
+            <img class="shadow-xl  shadow-xl shadow-cyan-950 w- m-auto rounded-lg" id="saludo" src="" alt="">
+
+        </div>
+        <script src="js/saludos.js"></script>
+</body>
+
+</html>

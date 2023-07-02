@@ -1,0 +1,25 @@
+.bg {
+
+    background-image: url("../img/ff.jpg");
+}
+
+
+
+.How {
+    color: rgb(246, 242, 242);
+    padding-top: 2%;
+}
+
+.box {
+
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.folders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    gap: 69px 25px;
+}

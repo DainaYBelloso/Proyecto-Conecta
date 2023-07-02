@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi nombre es...</title>
+    <link rel="stylesheet" href="css/name.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="bg-gradient-to-r from-purple-400 to-yellow-400">
+
+    <div class=" inline-flex w-full mx-auto ">
+        <div class="flex flex-row  space-x-96 m-auto mt-6 mb-8">
+            <img class="w-40  absolute top-0 right-2 " src="img/logo.png" alt="">
+
+        </div>
+        <div class=" boton absolute left-10 top-10 hover:text-white bg-yellow-300">
+            <button id="volver">Atrás</button>
+        </div>
+    </div>
+    <div>
+        <div class="box font-serif text-2xl">
+            <div>
+                <p class="">Mi</p>
+                <img class="rounded-lg translate-y-6" src="img/yo.gif" alt="">
+            </div>
+            <div>
+                <p class="">nombre</p>
+                <img class=" rounded-lg translate-y-6" src="img/nombre.gif" alt="">
+            </div>
+            <div>
+                <p class="">es</p>
+            </div>
+            <div class="">
+                <input id="escribe" class="text-2xl" type="text" placeholder="Escribe tu nombre">
+                <div id="output">
+                </div>
+                <div id="signo"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/name.js"></script>
+
+</body>
+
+</html>
