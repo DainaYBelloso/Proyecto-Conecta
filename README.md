@@ -39,6 +39,7 @@ Conjunto de botones que al pulsar se abren diversos apartados con vocabulario de
 
 **DICCIONARIO** 
 Al igual que en la sección anterior (mi nombre es) se ha creado una base datos y siguiendo esa linea en el espacio para introduccir el texto se ha creado un buscador de verbos que solo se podran buscar en infinitivo y al dar enter aparecera el signo correspondiente.
+
 ![Captura de pantalla 2023-07-02 215004](https://github.com/DainaYBelloso/Proyecto-Conecta/assets/129385025/57c63602-328c-4299-a6e3-8fdf931ec789)
 
 
